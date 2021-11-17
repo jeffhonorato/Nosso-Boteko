@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@300&family=Merienda&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fonte-menu: #fba802;
+    --fonte-menu-principal: 'Bubblegum Sans', cursive;
+    --fonte-titulos: 'Merienda', cursive;
+    --fonte-texto: 'Comic Neue', cursive;
+    --fonte-texto-alt: 'Source Code Pro', monospace;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/************ HEADER - CABECALHO ************/ 
+.header {
+    background-image: url('./img/img-cabecalho.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.img-logo {
+    width: 300px;
+    margin: 0 auto;
+    /* margin-top: 1rem; */
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+.menu-itens {
+    color: var(--cor-fonte-menu);
+    font-size: 1.5rem;
+    font-family: var(--fonte-menu-principal);
+    font-size: 2rem; /* 32px */
+    padding: 0.75rem; /* 12px */
+    border-bottom: transparent;
+}
+
+.menu-itens:hover {
+    border-bottom: 2px solid #fba802;
+    transition: all 0.5s;
+}
+
+/************ MAIN ************/ 
+.marcas {
+    background-color: #3A3A3B;
+}
+
+.marcas h2 {
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-size: 2.5rem; /* 40px */
+    color: #fff;
+}
+
+
+.happy-hour {
+    margin-top: 1.5rem;
+    background-image: url('./img/fundo-madeira-escuro.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    
+}
+
+.happy-hour-titulo {
+    font-family: var(--fonte-titulos);
+    text-align: center;
+    padding: 1.5rem;  /* 24px */
+    font-size: 2.5rem; /* 40px */
+    color: #fff;
+}
+
+.happy-hour p {
+    color: #fff;
+    font-family: var(--fonte-texto-alt);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0.75rem;
+}
+
+.galeria-happy-hour {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.galeria-happy-hour img {
+    width: 340px;
+}
+
