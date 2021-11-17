@@ -57,6 +57,8 @@ a {
     font-size: 2rem; /* 32px */
     padding: 0.75rem; /* 12px */
     border-bottom: transparent;
+    cursor: pointer;
+    
 }
 
 .menu-itens:hover {
@@ -64,9 +66,13 @@ a {
     transition: all 0.5s;
 }
 
+.menu-itens a {
+    color:#fba802;
+}
+
 /************ MAIN ************/ 
 .marcas {
-    background-color: #3A3A3B;
+    background-color: #fff;
 }
 
 .marcas h2 {
@@ -74,18 +80,17 @@ a {
     text-align: center;
     font-family: var(--fonte-titulos);
     font-size: 2.5rem; /* 40px */
-    color: #fff;
+    color: #fba802;
 }
 
-
 .happy-hour {
-    margin-top: 1.5rem;
-    background-image: url('./img/fundo-madeira-escuro.jpg');
+    padding-top: 1.5rem;
+    background-image: url('./img/background-madeira-escura.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
-    
+    height: 760px;
+    position: relative;
 }
 
 .happy-hour-titulo {
@@ -94,6 +99,18 @@ a {
     padding: 1.5rem;  /* 24px */
     font-size: 2.5rem; /* 40px */
     color: #fff;
+}
+
+.copo-detahe {
+    position: absolute;
+    bottom: 480px;
+    
+}
+
+.copo-detalhe-invertido {
+    position: absolute;
+    left: 950px;
+    top: -30px;
 }
 
 .happy-hour p {
@@ -115,4 +132,107 @@ a {
 .galeria-happy-hour img {
     width: 340px;
 }
+
+.galeria-happy-hour img:hover {
+    box-shadow: 0 0 10px 3px #fff;
+    transition: all 0.7s;
+}
+
+.cardapio {
+    padding-top: 1.5rem;
+    background-image: url('./img/background-madeira-escura.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    /* position: relative; */
+
+    position: relative;
+}
+
+.cardapio-titulo {
+    font-family: var(--fonte-titulos);
+    text-align: center;
+    padding: 1.5rem;  /* 24px */
+    font-size: 2.5rem; /* 40px */
+    color: var(--cor-fonte-menu);
+
+}
+
+.menu-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.menu-cardapio span {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    font-family: var(--fonte-titulos);
+    color: var(--cor-fonte-menu);
+    font-size: 1.25rem;
+    /* background-color: cornflowerblue; */
+}
+
+.img-menu-cardapio {
+    width: 100px;
+    /* background-color: burlywood; */
+    padding: 10px;
+    border: transparent;
+}
+
+.menu-cardapio a:hover {
+    box-shadow: 4px 4px 14px 4px #fba802;
+    transition: all 1s;
+}
+
+.ajuste-img {
+    margin: 0 auto;
+}
+
+.modal-cardapio {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3rem;
+
+}
+
+.modal-petiscos h2 {
+    color: var(--cor-fonte-menu);
+    font-family: var(--fonte-titulos);
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+}
+
+.modal-petiscos h3 {
+    color: var(--cor-fonte-menu);
+    font-family: var(--fonte-texto-alt);
+    font-size: 1.5rem;
+}
+
+.descricao {
+    padding: 1rem;
+}
+
+.desc-produto::before {
+    content: "🍖";
+    display: inline-block;
+}
+
+.desc-quantidade {
+    color: #fff;
+    font-family: var(--fonte-texto-alt);
+    font-size: 1.5rem;
+}
+
+.desc-preco {
+    font-weight: bold;
+}
+
+
+
+
 
