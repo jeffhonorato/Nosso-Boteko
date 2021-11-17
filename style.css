@@ -83,6 +83,8 @@ a {
     color: #fba802;
 }
 
+/************ HAPPY-HOUR SECTION ************/ 
+
 .happy-hour {
     padding-top: 1.5rem;
     background-image: url('./img/background-madeira-escura.jpg');
@@ -109,7 +111,7 @@ a {
 
 .copo-detalhe-invertido {
     position: absolute;
-    left: 950px;
+    left: 1020px;
     top: -30px;
 }
 
@@ -138,6 +140,7 @@ a {
     transition: all 0.7s;
 }
 
+/************ CARDÁPIO - SECTION ************/ 
 .cardapio {
     padding-top: 1.5rem;
     background-image: url('./img/background-madeira-escura.jpg');
@@ -167,15 +170,15 @@ a {
     padding-bottom: 2rem;
 }
 
-.menu-cardapio span {
+.menu-cardapio p {
     display: block;
     text-align: center;
     padding: 0.75rem;
     font-family: var(--fonte-titulos);
     color: var(--cor-fonte-menu);
     font-size: 1.25rem;
-    /* background-color: cornflowerblue; */
 }
+
 
 .img-menu-cardapio {
     width: 100px;
@@ -184,19 +187,54 @@ a {
     border: transparent;
 }
 
-.menu-cardapio a:hover {
-    box-shadow: 4px 4px 14px 4px #fba802;
-    transition: all 1s;
+.lista-cardapio {
+    padding: 1rem;
 }
 
-.ajuste-img {
-    margin: 0 auto;
+.lista-cardapio:active {
+    transform: scale(0.95);
 }
 
+.lista-cardapio:hover {
+    box-shadow: 0 0 10px 1px #fba802;
+    transition: all 0.8s;
+}
+
+.lista-cardapio:active {
+    background-color: #b4882f;
+}
+
+.lista-cardapio a {
+    font-family: var(--fonte-titulos);
+    color: var(--cor-fonte-menu);
+    font-size: 1.75rem;
+    padding: 0.75rem;
+}
+
+.cardapio-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-cardapio {
+    display: inline-block;
+    width: 40px;
+}
+
+/************ MODAL CARDÁPIO - SECTION ************/ 
 .modal-cardapio {
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 3rem;
+}
+
+.modal-petiscos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
 
 }
 
@@ -205,6 +243,8 @@ a {
     font-family: var(--fonte-titulos);
     font-size: 3rem;
     margin-bottom: 0.75rem;
+    background-color: chocolate;
+    text-align: center;
 }
 
 .modal-petiscos h3 {
@@ -215,6 +255,7 @@ a {
 
 .descricao {
     padding: 1rem;
+    background-color: cadetblue;
 }
 
 .desc-produto::before {
