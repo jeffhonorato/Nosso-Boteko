@@ -109,11 +109,11 @@ a {
     
 }
 
-.copo-detalhe-invertido {
+/* .copo-detalhe-invertido {
     position: absolute;
-    left: 1020px;
-    top: -30px;
-}
+    left: 980px;
+    top: -50px;
+} */
 
 .happy-hour p {
     color: #fff;
@@ -235,7 +235,8 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
-
+    box-shadow: 0px 0px 20px 1px var(--cor-fonte-menu);
+    padding: 1.75rem;
 }
 
 .modal-petiscos h2 {
@@ -243,7 +244,6 @@ a {
     font-family: var(--fonte-titulos);
     font-size: 3rem;
     margin-bottom: 0.75rem;
-    background-color: chocolate;
     text-align: center;
 }
 
@@ -255,7 +255,19 @@ a {
 
 .descricao {
     padding: 1rem;
-    background-color: cadetblue;
+}
+
+.descricao:hover {
+    box-shadow: 0px 0px 1px 1px var(--cor-fonte-menu);
+    transition: all 0.7s;
+}
+
+.descricao h3  {
+    font-size: 1.25rem;
+}
+
+.desc-produto {
+    color: var(--cor-fonte-menu);
 }
 
 .desc-produto::before {
@@ -266,12 +278,83 @@ a {
 .desc-quantidade {
     color: #fff;
     font-family: var(--fonte-texto-alt);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .desc-preco {
     font-weight: bold;
 }
+
+.pedido {
+    padding: 1rem;
+}
+
+.btn-pedido {
+    padding: 1rem;
+    background-color: var(--cor-fonte-menu);
+    font-family: var(--fonte-titulos);
+    /* max-width: 200px; */
+    text-align: center;
+    font-size: 1.25rem;
+    border-radius: 6px;
+}
+
+.btn-pedido:hover {
+    background-color: #fff;
+    transition: all 0.6s;
+}
+
+.modal-bedidas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    box-shadow: 0px 0px 20px 1px var(--cor-fonte-menu);
+    padding: 1.75rem;
+}
+
+.modal-bedidas h2 {
+    color: var(--cor-fonte-menu);
+    font-family: var(--fonte-titulos);
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.modal-self-service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    box-shadow: 0px 0px 20px 1px var(--cor-fonte-menu);
+    padding: 1.75rem;
+}
+
+.modal-self-service h2 {
+    color: var(--cor-fonte-menu);
+    font-family: var(--fonte-titulos);
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+/************ RESPONSIVIDADE ************/ 
+
+@media(max-width: 768px) {
+    .modal-petiscos {
+       grid-template-columns: 1fr; 
+    }
+    .modal-petiscos h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* @media(max-width: 400px) {
+    .copo-detalhe-invertido {
+        display: block;
+    }
+} */
+
+
+
 
 
 
