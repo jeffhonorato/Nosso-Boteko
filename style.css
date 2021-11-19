@@ -76,7 +76,7 @@ a {
 }
 
 .marcas h2 {
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     font-family: var(--fonte-titulos);
     font-size: 2.5rem; /* 40px */
@@ -91,8 +91,6 @@ a {
     max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
-    background-color: aquamarine;
-    
 }
 
 .patrocinios img {
@@ -106,6 +104,7 @@ a {
     background-image: url('./img/background-madeira-escura.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 760px;
     position: relative;
@@ -369,6 +368,64 @@ a {
     font-size: 2.5rem; /* 40px */
     color: #fba802;
 }
+
+/************ SECTION SOBRE NÓS ************/
+.sobre {
+    background-image: url('./img/background-chopp.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+}
+
+.sobre-nos-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-content: flex-end;
+    justify-items: end;
+    align-items: flex-end;
+    height: 600px;
+
+    /* background-color: darkgrey; */
+}
+
+.sobre-nos-img img {
+    width: 400px;
+    display: none;
+}
+
+.sobre-nos {
+    max-width: 700px;
+}
+.sobre-nos h1 {
+    padding: 1.5rem;
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-size: 5rem; /* 40px */
+    color: #fff;
+} 
+
+.sobre-nos h2 {
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-size: 1.75rem; /* 40px */
+    color: #fff;    
+}
+
+.sobre-nos p {
+    font-family: var(--fonte-texto);
+    color: #fff;
+    text-align: center;
+    padding: 0.7rem;
+    font-size: 1.25rem;
+}
+
+/************ SECTION FOOTER ************/
+
 
 /************ RESPONSIVIDADE ************/ 
 
