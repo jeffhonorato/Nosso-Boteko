@@ -83,6 +83,22 @@ a {
     color: #fba802;
 }
 
+.patrocinios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: aquamarine;
+    
+}
+
+.patrocinios img {
+    width: 100px;
+}
+
 /************ HAPPY-HOUR SECTION ************/ 
 
 .happy-hour {
@@ -336,6 +352,24 @@ a {
     text-align: center;
 }
 
+
+/************ SECTION GALERIA FOTOS ************/ 
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.section-galeria h2 {
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-size: 2.5rem; /* 40px */
+    color: #fba802;
+}
+
 /************ RESPONSIVIDADE ************/ 
 
 @media(max-width: 768px) {
@@ -347,11 +381,11 @@ a {
     }
 }
 
-/* @media(max-width: 400px) {
-    .copo-detalhe-invertido {
-        display: block;
+@media(max-width: 425px) {
+    .galeria {
+        grid-template-columns: 1fr;
     }
-} */
+}
 
 
 
