@@ -1,19 +1,20 @@
-const btnCardapio = document.querySelectorAll(".lista-cardapio a");
-const modalCardapio = document.querySelectorAll(".js-cardapio");
+const btnCardapio = document.querySelectorAll(".menu-cardapio li");
+const modalCardapio = document.querySelectorAll(".modal-cardapio .js-cardapio");
 
-console.log(btnCardapio)
+// console.log(btnCardapio)
+// console.log(btnCardapio)
 
 const activeTab = (index) => {
-    // btnCardapio.prevent.preventDefault();
-
     modalCardapio.forEach(section => {
         section.classList.remove("ativo")
     });
-
     modalCardapio[index].classList.add("ativo");
+    
 }
 
+
 btnCardapio.forEach((itemBtn, index) => {
+    // btnCardapio.preventDefault;
     itemBtn.addEventListener('click', () => {
         activeTab(index)
     });
