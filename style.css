@@ -58,7 +58,6 @@ a {
     padding: 0.75rem; /* 12px */
     border-bottom: transparent;
     cursor: pointer;
-    
 }
 
 .menu-itens:hover {
@@ -389,8 +388,6 @@ a {
     justify-items: end;
     align-items: flex-end;
     height: 600px;
-
-    /* background-color: darkgrey; */
 }
 
 .sobre-nos-img img {
@@ -425,7 +422,139 @@ a {
 }
 
 /************ SECTION FOOTER ************/
+.footer {
+    background-image: url('./img/background-footer.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
 
+.footer-informacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 0.5rem;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    /* margin: 0 auto; */
+    height: 600px;
+
+    ;
+}
+
+.logo {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.logo-rodape {
+    width: 300px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: skyblue; */
+    /* margin: 0 auto; */
+}
+
+.img-rede-socias {
+    width: 50px;
+}
+
+.img-rede-socias:hover {
+    width: 47px;
+    transition: all 0.5s;
+}
+
+.endereco {
+    padding: 1rem;
+    /* background-color: blue; */
+}
+
+.endereco h2 {
+    color: #ffa300;
+    font-family: var(--fonte-titulos);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.endereco p {
+    color: #fff;
+    font-family: var(--fonte-titulos);
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+.horarios {
+    /* background-color: wheat; */
+    padding: 1rem;
+}
+
+.horarios h2 {
+    color: #ffa300;
+    font-family: var(--fonte-titulos);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.horarios p {
+    color: #fff;
+    font-family: var(--fonte-titulos);
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+.horarios a {
+    margin: 0 auto;
+}
+
+.desenvolvedor {
+    background-color: #FFA300;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.desenvolvedor span {
+    font-family: var(--fonte-texto-alt);
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000;
+    padding: 0.5rem;
+}
+
+.desenvolvedor a {
+    font-family: var(--fonte-texto-alt);
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000;
+    padding: 0.5rem;
+
+}
+
+.desenvolvedor a:hover {
+    background-color: #fff;
+    transition: all 0.6s;
+    border-radius: 5px;
+}
+
+.desenvolvedor img {
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 6px;
+    left: 4px;
+}
 
 /************ RESPONSIVIDADE ************/ 
 
