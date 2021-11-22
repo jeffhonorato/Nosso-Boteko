@@ -214,9 +214,9 @@ a {
     transition: all 0.8s;
 }
 
-.lista-cardapio:active {
+/* .lista-cardapio:active {
     background-color: #b4882f;
-}
+} */
 
 .lista-cardapio a {
     font-family: var(--fonte-titulos);
@@ -245,7 +245,7 @@ a {
     padding-top: 3rem;
 }
 
-.modal-petiscos {
+.petiscos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
@@ -253,7 +253,7 @@ a {
     padding: 1.75rem;
 }
 
-.modal-petiscos h2 {
+.petiscos h2 {
     color: var(--cor-fonte-menu);
     font-family: var(--fonte-titulos);
     font-size: 3rem;
@@ -261,7 +261,7 @@ a {
     text-align: center;
 }
 
-.modal-petiscos h3 {
+.petiscos h3 {
     color: var(--cor-fonte-menu);
     font-family: var(--fonte-texto-alt);
     font-size: 1.5rem;
@@ -285,7 +285,7 @@ a {
 }
 
 .desc-produto::before {
-    content: "🍖";
+    content: " * ";
     display: inline-block;
 }
 
@@ -318,7 +318,7 @@ a {
     transition: all 0.6s;
 }
 
-.modal-bedidas {
+.bedidas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
@@ -326,7 +326,7 @@ a {
     padding: 1.75rem;
 }
 
-.modal-bedidas h2 {
+.bedidas h2 {
     color: var(--cor-fonte-menu);
     font-family: var(--fonte-titulos);
     font-size: 3rem;
@@ -334,7 +334,7 @@ a {
     text-align: center;
 }
 
-.modal-self-service {
+.self-service {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
@@ -342,7 +342,7 @@ a {
     padding: 1.75rem;
 }
 
-.modal-self-service h2 {
+.self-service h2 {
     color: var(--cor-fonte-menu);
     font-family: var(--fonte-titulos);
     font-size: 3rem;
@@ -554,6 +554,14 @@ a {
     position: relative;
     top: 6px;
     left: 4px;
+}
+
+.js-cardapio {
+    display: none;
+}
+
+.js-cardapio .ativo {
+    display: block;
 }
 
 /************ RESPONSIVIDADE ************/ 
