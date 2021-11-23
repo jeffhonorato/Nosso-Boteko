@@ -242,7 +242,7 @@ a {
 
 /************ MODAL CARDÁPIO - SECTION ************/ 
 .modal-cardapio {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 3rem 0rem;
 }
@@ -299,10 +299,13 @@ a {
 
 .desc-preco {
     font-weight: bold;
+    color: var(--cor-fonte-menu);
+    font-size: 1.5rem;
 }
 
 .pedido {
     padding: 1rem;
+    margin-top: 14px;
 }
 
 .btn-pedido {
@@ -360,6 +363,10 @@ a {
     gap: 1rem;
     padding: 1rem;
     justify-content: center;
+
+}
+.section-galeria {
+    margin-bottom: 2rem;
 }
 
 .section-galeria h2 {
@@ -557,13 +564,13 @@ a {
 }
 
 .js-cardapio section {
-  display: none;
-}
-
+    display: none;
+  }
+  
 .js-cardapio section.ativo {
-  display: block;
-  animation: show .9s forwards;
-}
+    display: block;
+    animation: show .9s forwards;
+  }
 
 @keyframes show {
     from {
