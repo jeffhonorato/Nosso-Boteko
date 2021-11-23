@@ -1,24 +1,43 @@
-const btnCardapio = document.querySelectorAll(".menu-cardapio li");
-const modalCardapio = document.querySelectorAll(".modal-cardapio .js-cardapio");
+const btnCardapio = document.querySelectorAll(".cardapio-itens li");
+const modalCardapio = document.querySelectorAll(".js-cardapio section");
 
-// console.log(btnCardapio)
-// console.log(btnCardapio)
+if(btnCardapio.length && modalCardapio.length) {
+    modalCardapio[0].classList.add('ativo');
 
-const activeTab = (index) => {
-    modalCardapio.forEach(section => {
-        section.classList.remove("ativo")
+    const activeTab = (index) => {
+        modalCardapio.forEach(section => {
+            section.classList.remove("ativo")
+        });
+        modalCardapio[index].classList.add("ativo");
+    }
+  
+    btnCardapio.forEach((itemBtn, index) => {
+       
+        itemBtn.addEventListener('click', () => {
+            activeTab(index);
+        });
     });
-    modalCardapio[index].classList.add("ativo");
-    
 }
 
+// const tabMenu = document.querySelectorAll('.js-tabmenu li');
+// const tabContent = document.querySelectorAll('.js-tabcontent section');
 
-btnCardapio.forEach((itemBtn, index) => {
-    // btnCardapio.preventDefault;
-    itemBtn.addEventListener('click', () => {
-        activeTab(index)
-    });
-})
+// if(tabMenu.length && tabContent.length) {
+//   tabContent[0].classList.add('ativo');
+
+//   function activeTab(index) {
+//     tabContent.forEach((section) => {
+//       section.classList.remove('ativo');
+//     });
+//     tabContent[index].classList.add('ativo');
+//   }
+
+//   tabMenu.forEach((itemMenu, index) => {
+//     itemMenu.addEventListener('click', () => {
+//       activeTab(index);
+//     });
+//   });
+// }
 
 
 

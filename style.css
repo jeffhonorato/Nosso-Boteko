@@ -163,8 +163,9 @@ a {
     background-size: cover;
     background-attachment: scroll;
     /* position: relative; */
-
     position: relative;
+
+    margin-bottom: 1rem;
 }
 
 .cardapio-titulo {
@@ -223,6 +224,7 @@ a {
     color: var(--cor-fonte-menu);
     font-size: 1.75rem;
     padding: 0.75rem;
+    cursor: pointer;
 }
 
 .cardapio-itens {
@@ -242,10 +244,10 @@ a {
 .modal-cardapio {
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 3rem;
+    padding: 3rem 0rem;
 }
 
-.petiscos {
+.petiscos section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
@@ -318,7 +320,7 @@ a {
     transition: all 0.6s;
 }
 
-.bedidas {
+.bedidas section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
@@ -334,7 +336,7 @@ a {
     text-align: center;
 }
 
-.self-service {
+.self-service section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
@@ -441,8 +443,6 @@ a {
     justify-content: space-around;
     /* margin: 0 auto; */
     height: 600px;
-
-    ;
 }
 
 .logo {
@@ -556,13 +556,25 @@ a {
     left: 4px;
 }
 
-/* .js-cardapio {
-    display: none;
+.js-cardapio section {
+  display: none;
 }
 
-.js-cardapio .ativo {
-    display: block;
-} */
+.js-cardapio section.ativo {
+  display: block;
+  animation: show .9s forwards;
+}
+
+@keyframes show {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
 
 /************ RESPONSIVIDADE ************/ 
 
