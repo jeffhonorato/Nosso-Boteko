@@ -97,7 +97,6 @@ a {
 }
 
 /************ HAPPY-HOUR SECTION ************/ 
-
 .happy-hour {
     padding-top: 1.5rem;
     background-image: url('./img/background-madeira-escura.jpg');
@@ -441,15 +440,16 @@ a {
 }
 
 .footer-informacoes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
     align-items: center;
-    align-content: center;
     justify-content: space-around;
-    /* margin: 0 auto; */
     height: 600px;
+}
+
+figure.logo {
+    margin: 0px;
 }
 
 .logo {
@@ -563,6 +563,8 @@ a {
     left: 4px;
 }
 
+/*********** JAVASCRIPT *************/
+
 .js-cardapio section {
     display: none;
   }
@@ -585,25 +587,62 @@ a {
 
 /************ RESPONSIVIDADE ************/ 
 
-@media(max-width: 768px) {
-    .modal-petiscos {
-       grid-template-columns: 1fr; 
+/* DISPOSITIVOS MÉDIOS - TABLET */ 
+@media(min-width:426px) and (max-width: 1048px) {
+    article.happy-hour {
+        height: 1200px;
     }
-    .modal-petiscos h2 {
-        font-size: 2.5rem;
+
+    .copo-detahe {
+        display: none;
     }
 }
 
-@media(max-width: 425px) {
+/* DISPOSITIVOS PEQUENOS - CELULARES */ 
+@media(min-width:425px) and (max-width:692px) {
+    article.happy-hour {
+        height: 1590px;
+    }
+
+    .copo-detahe {
+        display: none;
+    }
+
+    
+}
+
+@media(min-width:320px) and (max-width: 424px) {
+    article.happy-hour {
+        height: 1460px;
+    }
+
+    .galeria-happy-hour img {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .copo-detahe {
+        display: none;
+    }
+
     .galeria {
         grid-template-columns: 1fr;
     }
 }
 
+@media(min-width:425px) and (max-width: 768px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 
-
-
-
-
-
+@media(min-width:320px) and (max-width:768px) {
+    .footer {
+        height: 1000px;
+    }
+    
+    .footer-informacoes {
+        height: 1000px;
+    }
+}
