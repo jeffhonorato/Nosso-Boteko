@@ -473,11 +473,11 @@ figure.logo {
 }
 
 .img-rede-socias {
-    width: 50px;
+    width: 40px;
 }
 
 .img-rede-socias:hover {
-    width: 47px;
+    width: 37px;
     transition: all 0.5s;
 }
 
@@ -596,6 +596,8 @@ figure.logo {
     .copo-detahe {
         display: none;
     }
+
+    
 }
 
 /* DISPOSITIVOS PEQUENOS - CELULARES */ 
@@ -627,6 +629,18 @@ figure.logo {
 
     .galeria {
         grid-template-columns: 1fr;
+    }
+
+    .sobre-nos h1 {
+        font-size: 2.3rem;
+    }
+
+    .sobre-nos h2 {
+        font-size: 1.5rem;
+    }
+
+    .marcas h2 {
+        font-size: 1.5rem;
     }
 }
 
