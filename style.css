@@ -161,9 +161,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    /* position: relative; */
     position: relative;
-
     margin-bottom: 1rem;
 }
 
@@ -181,18 +179,29 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
+    /* max-width: 600px; */
+
+    /* background-color: aquamarine; */
+
 }
 
-.menu-cardapio p {
+/* .menu-cardapio p {
     display: block;
     text-align: center;
     padding: 0.75rem;
     font-family: var(--fonte-titulos);
     color: var(--cor-fonte-menu);
     font-size: 1.25rem;
-}
+} */
 
+.cardapio-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
 
 .img-menu-cardapio {
     width: 100px;
@@ -203,6 +212,7 @@ a {
 
 .lista-cardapio {
     padding: 1rem;
+    box-shadow: 3px 1px 2px 1px #fff;
 }
 
 .lista-cardapio:active {
@@ -214,9 +224,6 @@ a {
     transition: all 0.8s;
 }
 
-/* .lista-cardapio:active {
-    background-color: #b4882f;
-} */
 
 .lista-cardapio a {
     font-family: var(--fonte-titulos);
@@ -226,12 +233,8 @@ a {
     cursor: pointer;
 }
 
-.cardapio-itens {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+.lista-cardapio a:hover {
+    color: #fff;
 }
 
 .img-cardapio {
@@ -613,7 +616,7 @@ figure.logo {
     
 }
 
-@media(min-width:320px) and (max-width: 424px) {
+@media(min-width:320px) and (max-width: 425px) {
     article.happy-hour {
         height: 1460px;
     }
@@ -641,6 +644,24 @@ figure.logo {
 
     .marcas h2 {
         font-size: 1.5rem;
+    }
+
+    .img-cardapio {
+        display: none;
+    }
+
+    .lista-cardapio {
+        padding: 0.4rem;
+    }
+
+    .lista-cardapio a {
+        font-size: 0.75rem;
+    }
+
+    .cardapio-itens {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
     }
 }
 
@@ -675,4 +696,8 @@ figure.logo {
     .galeria-happy-hour img {
         width: 250px;
     }
+
+    
+
+
 }
