@@ -106,6 +106,7 @@ a {
     background-size: cover;
     height: 760px;
     position: relative;
+    box-shadow: inset 0 0 10px 1px #fba802;
 }
 
 .happy-hour-titulo {
@@ -162,7 +163,7 @@ a {
     background-size: cover;
     background-attachment: scroll;
     position: relative;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .cardapio-titulo {
@@ -179,21 +180,8 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
-    /* padding-bottom: 2rem; */
-    /* max-width: 600px; */
-
-    /* background-color: aquamarine; */
 
 }
-
-/* .menu-cardapio p {
-    display: block;
-    text-align: center;
-    padding: 0.75rem;
-    font-family: var(--fonte-titulos);
-    color: var(--cor-fonte-menu);
-    font-size: 1.25rem;
-} */
 
 .cardapio-itens {
     display: flex;
@@ -363,13 +351,30 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.25rem;
     justify-content: center;
+}
 
+#galeria {
+    background-image: url("./img/background-madeira-escura.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 10px 1px #fba802;
+    height: 700px;
 }
-.section-galeria {
-    margin-bottom: 2rem;
+
+.img-galeria:hover {
+    box-shadow: 0 0 10px 1px #fff;
+    transition: all 0.6s;
 }
+
+/* .section-galeria {
+    padding-bottom: 2rem;
+    margin-top: 10px;
+
+    background-color: aquamarine;
+} */
 
 .section-galeria h2 {
     padding: 2rem;
@@ -440,6 +445,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
+    box-shadow: inset 0 0 10px 1px #fba802;
 }
 
 .footer-informacoes {
@@ -605,21 +611,13 @@ figure.logo {
 
 /* DISPOSITIVOS PEQUENOS - CELULARES */ 
 @media(min-width:425px) and (max-width:692px) {
-    article.happy-hour {
-        height: 1590px;
-    }
 
     .copo-detahe {
         display: none;
-    }
-
-    
+    } 
 }
 
-@media(min-width:320px) and (max-width: 425px) {
-    article.happy-hour {
-        height: 1460px;
-    }
+@media(min-width:320px) and (max-width: 424px) {
 
     .galeria-happy-hour img {
         width: 300px;
@@ -632,6 +630,10 @@ figure.logo {
 
     .galeria {
         grid-template-columns: 1fr;
+    }
+
+    #galeria {
+        height: 2350px;
     }
 
     .sobre-nos h1 {
@@ -664,19 +666,38 @@ figure.logo {
         justify-content: center;
     }
 
-    /* .prato-feito {
-        font-size: 0.5rem;
-    } */
+    
+}
+
+@media(min-width:516px) and (max-width:768px) {
+    article.happy-hour {
+      max-height: 1000px;
+    }
 }
 
 @media(min-width:425px) and (max-width: 768px) {
     .galeria {
         grid-template-columns: 1fr 1fr;
     }
+
+    #galeria {
+        height: 800px;
+    }
+
+    .sobre-nos h1 {
+        font-size: 2.3rem;
+    }
+
+    .sobre-nos h2 {
+        font-size: 1.5rem;
+    }
 }
 
-
 @media(min-width:320px) and (max-width:768px) {
+    article.happy-hour {
+        height: 1300px;
+    }
+    
     .footer {
         height: 1030px;
     }
@@ -701,7 +722,19 @@ figure.logo {
         width: 250px;
     }
 
-    
+    .sobre {
+        background-attachment: fixed;
+    }
+}
 
+@media(min-width:500px) and (max-width:768px) {
+    #galeria {
+        height: 1200px;
+    }
+}
 
+@media(min-width:1442px) and (max-width:2560px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
