@@ -255,17 +255,20 @@ a {
 
 .petiscos h3 {
     color: var(--cor-fonte-menu);
-    font-family: var(--fonte-texto-alt);
+    /* font-family: var(--fonte-texto-alt); */
     font-size: 1.5rem;
 }
 
 .descricao {
     padding: 1rem;
+    border-bottom: solid 1px #fff;
 }
 
 .descricao:hover {
-    box-shadow: 0px 0px 1px 1px var(--cor-fonte-menu);
+    background-color: #6e6758;
     transition: all 0.7s;
+    border-bottom: solid 1px #000;
+
 }
 
 .descricao h3  {
@@ -274,6 +277,8 @@ a {
 
 .desc-produto {
     color: var(--cor-fonte-menu);
+    font-family: var(--fonte-texto);
+    text-transform: uppercase;
 }
 
 .desc-produto::before {
@@ -604,9 +609,7 @@ figure.logo {
 
     .copo-detahe {
         display: none;
-    }
-
-    
+    }    
 }
 
 /* DISPOSITIVOS PEQUENOS - CELULARES */ 
