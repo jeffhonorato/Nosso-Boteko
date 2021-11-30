@@ -42,6 +42,18 @@ a {
     /* margin-top: 1rem; */
 }
 
+#btn-mobile {
+    display: none;
+    padding: 1rem;
+    margin: 0 auto; 
+    background-color: var(--cor-fonte-menu);
+    font-family: var(--fonte-titulos);
+    text-align: center;
+    font-size: 1.25rem;
+    border-radius: 6px;
+    
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -307,7 +319,6 @@ a {
     padding: 1rem;
     background-color: var(--cor-fonte-menu);
     font-family: var(--fonte-titulos);
-    /* max-width: 200px; */
     text-align: center;
     font-size: 1.25rem;
     border-radius: 6px;
@@ -697,6 +708,31 @@ figure.logo {
 }
 
 @media(min-width:320px) and (max-width:768px) {
+    
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        text-align: center;
+    }
+
+    #nav.active #menu {
+        display: block;
+        text-align: center;
+        visibility: visible;
+    }
+
+    .menu-itens:hover {
+        background-color: #BC0101;
+        transition: all;
+    }
+
+    .header {
+        height: 740px;
+    }
+    
     article.happy-hour {
         height: 1300px;
     }

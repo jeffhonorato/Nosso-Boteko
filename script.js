@@ -1,3 +1,15 @@
+// Adaptando o menu para MOBILE
+const btnMobile = document.querySelector('#btn-mobile');
+
+function toggleMenu() {
+    const nav = document.querySelector('#nav');
+    nav.classList.toggle('active');
+ 
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+
+// ESCONDE E APARECE CARDAPIO
 const btnCardapio = document.querySelectorAll(".cardapio-itens li");
 const modalCardapio = document.querySelectorAll(".js-cardapio section");
 
@@ -18,6 +30,8 @@ if(btnCardapio.length && modalCardapio.length) {
         });
     });
 }
+
+
 
 
 
