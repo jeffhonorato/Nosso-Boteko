@@ -724,11 +724,6 @@ figure.logo {
         visibility: visible;
     }
 
-    .menu-itens:hover {
-        background-color: #BC0101;
-        transition: all;
-    }
-
     .header {
         height: 740px;
     }
