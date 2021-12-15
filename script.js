@@ -1,3 +1,9 @@
+// BANNER ROTATIVO.
+
+
+
+
+
 // Adaptando o menu para MOBILE
 const btnMobile = document.querySelector('#btn-mobile');
 
@@ -30,6 +36,8 @@ if(btnCardapio.length && modalCardapio.length) {
         });
     });
 }
+
+
 
 
 

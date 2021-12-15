@@ -59,11 +59,11 @@ a {
     
 }
 
-.nav {
+/* .nav {
     position: sticky;
     top: 60px;
     z-index: 4;
-}
+} */
 
 .menu {
     display: flex;
@@ -95,6 +95,7 @@ a {
 /************ MAIN ************/ 
 .marcas {
     background-color: #fff;
+    /* position: relative; */
 }
 
 .marcas h2 {
@@ -106,17 +107,22 @@ a {
 }
 
 .patrocinios {
+    height: 24vh;
+}
+
+.patrocinios-banner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0.5rem;
     align-items: center;
     max-width: 900px;
-    margin: 0 auto;
     padding: 1rem;
+    margin: 0 auto;
 }
 
-.patrocinios img {
+.patrocinios-banner img {
     width: 100px;
+    
 }
 
 /************ HAPPY-HOUR SECTION ************/ 
