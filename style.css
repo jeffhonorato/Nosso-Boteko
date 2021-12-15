@@ -59,6 +59,12 @@ a {
     
 }
 
+.nav {
+    position: sticky;
+    top: 60px;
+    z-index: 4;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
