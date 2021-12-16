@@ -102,7 +102,7 @@ a {
 }
 
 .patrocinios {
-    height: 25vh;
+    height: 20vh;
     /* max-width: ; */
     display: flex;
     justify-content: center;
@@ -658,7 +658,7 @@ figure.logo {
 @media(min-width:320px) and (max-width: 424px) {
     
     .patrocinios {
-        height: 20vh;
+        height: 15vh;
     }
 
 
@@ -689,6 +689,7 @@ figure.logo {
 
     .marcas h2 {
         font-size: 1.5rem;
+        padding: .5rem;
     }
 
     .img-cardapio {
