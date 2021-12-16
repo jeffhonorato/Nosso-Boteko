@@ -13,7 +13,7 @@ function proximaImagem() {
         colecaoDeImagens = 0;
     }
 
-    imagens[colecaoDeImagens].classList.add("selected-banner")
+    imagens[colecaoDeImagens].classList.add("selected-banner");
 }
 
 
