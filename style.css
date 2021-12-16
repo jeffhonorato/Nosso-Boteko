@@ -59,12 +59,6 @@ a {
     
 }
 
-/* .nav {
-    position: sticky;
-    top: 60px;
-    z-index: 4;
-} */
-
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -103,11 +97,17 @@ a {
     text-align: center;
     font-family: var(--fonte-titulos);
     font-size: 2.5rem; /* 40px */
-    color: #fba802;
+    color: #000;
+    background-color: #ffa300;
 }
 
 .patrocinios {
-    height: 24vh;
+    height: 25vh;
+    /* max-width: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa300;
 }
 
 .patrocinios-banner {
@@ -118,11 +118,18 @@ a {
     max-width: 900px;
     padding: 1rem;
     margin: 0 auto;
+    opacity: 0;
+    transition: opacity 800ms;
+    position: absolute;
+
+}
+
+.selected-banner {
+    opacity: 1;
 }
 
 .patrocinios-banner img {
     width: 100px;
-    
 }
 
 /************ HAPPY-HOUR SECTION ************/ 
@@ -649,6 +656,11 @@ figure.logo {
 }
 
 @media(min-width:320px) and (max-width: 424px) {
+    
+    .patrocinios {
+        height: 20vh;
+    }
+
 
     .galeria-happy-hour img {
         width: 300px;
