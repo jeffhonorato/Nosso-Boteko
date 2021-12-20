@@ -64,7 +64,7 @@ if(btnCardapio.length && modalCardapio.length) {
 const slider = document.querySelector(".js-glider");
 
 new Glider(slider, {
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     draggable: true,
     dots: '.dots',

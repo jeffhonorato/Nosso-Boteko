@@ -400,11 +400,12 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0 0 10px 1px #fba802;
-    height: 600px;
+    height: 700px;
 }
 
 .galeria-album {
     margin: 1rem;
+    /* padding: 1rem; */
 }
 
 /* .img-galeria:hover {
