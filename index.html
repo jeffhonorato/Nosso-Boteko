@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/Ico-Shop-Beer.ico" type="image/x-icon">
-    <!-- <script>document.documentElement.className += ' js';</script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Nosso Boteko</title>
 </head>
 <body>
@@ -294,15 +295,7 @@
 
         <section class="section-galeria" id="galeria">
             <h2>Galeria</h2>
-            <div class="galeria">
-                <figure class="galeria-album">
-                    <img src="./img/galeria/mulheres-bar.jpg" alt="Imagem Pessoas" class="img-galeria">
-                </figure>
-
-                <figure class="galeria-album">
-                    <img src="./img/galeria/mulheres-bar.jpg" alt="Imagem Pessoas" class="img-galeria">
-                </figure>
-
+            <div class="galeria js-glider">
                 <figure class="galeria-album">
                     <img src="./img/galeria/mulheres-bar.jpg" alt="Imagem Pessoas" class="img-galeria">
                 </figure>
@@ -327,6 +320,10 @@
                     <img src="./img/galeria/mulheres-bar.jpg" alt="Imagem Pessoas" class="img-galeria">
                 </figure>
             </div>
+
+            <button aria-label="Previous" class="glider-prev"></button>
+            <button aria-label="Next" class="glider-next"></button>
+            <div role="tablist" class="dots"></div>
         </section>
 
         <article class="sobre" id="boteko">
@@ -379,6 +376,9 @@
             <span>Desenvolvido por:</span><a href="/">Primata-Code</a><img src="./img/primata.png" alt="Imagem Botão"></p>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

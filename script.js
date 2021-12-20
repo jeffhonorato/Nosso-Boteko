@@ -27,8 +27,6 @@ function start() {
 window.addEventListener("load", start)
 
 
-
-
 // Adaptando o menu para MOBILE
 const btnMobile = document.querySelector('#btn-mobile');
 
@@ -61,6 +59,23 @@ if(btnCardapio.length && modalCardapio.length) {
         });
     });
 }
+
+// GALERIA DE IMAGENS COM GLIDER.JS 
+const slider = document.querySelector(".js-glider");
+
+new Glider(slider, {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    draggable: true,
+    dots: '.dots',
+    scrollLock: true,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next',
+    }
+  });
+
+
 
 
 
