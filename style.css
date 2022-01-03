@@ -300,6 +300,16 @@ a {
     border-bottom: solid 1px #fff;
 }
 
+.desc {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.desc i {
+    color: #fff;
+}
+
 .descricao:hover {
     background-color: #6e6758;
     transition: all 0.7s;
@@ -315,11 +325,6 @@ a {
     color: var(--cor-fonte-menu);
     font-family: var(--fonte-texto);
     text-transform: uppercase;
-}
-
-.desc-produto::before {
-    content: " * ";
-    display: inline-block;
 }
 
 .desc-quantidade {
